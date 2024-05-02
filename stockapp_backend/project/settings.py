@@ -66,6 +66,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
     "http://localhost:80",
     "http://frontend:80",
+    "http://54.91.238.161:80"
+    "http://54.91.238.161:4200"
 ]
 
 TEMPLATES = [
