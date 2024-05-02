@@ -9,12 +9,12 @@ export class LoginService {
   constructor(private httpClient: HttpClient) { }
 
   addUser(param: any){
-    this.url = "http://0.0.0.0:8000/addUser/"
+    this.url = "http://backend:8000/addUser/"
     return this.httpClient.post(this.url, param);
   }
 
   checkUser(param: any){
-    this.url = "http://0.0.0.0:8000/checkLogin/"
+    this.url = "http://backend:8000/checkLogin/"
     return this.httpClient.post(this.url, param)
   }
 }

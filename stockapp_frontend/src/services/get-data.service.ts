@@ -10,23 +10,23 @@ export class GetDataService {
   constructor(private httpClient: HttpClient) { }
 
   getStockData(param: any){
-    this.url = "http://0.0.0.0:8000/getStockData/"
+    this.url = "http://backend:8000/getStockData/"
     return this.httpClient.post(this.url, param);
   }
   getModelData(param: any){
-    this.url = "http://0.0.0.0:8000/getModelData/"
+    this.url = "http://backend:8000/getModelData/"
     return this.httpClient.post(this.url, param);
   }
   predict(param: any){
-    this.url = "http://0.0.0.0:8000/predict/"
+    this.url = "http://backend:8000/predict/"
     return this.httpClient.post(this.url, param);
   }
   getNext30Days(param: any){
-    this.url = "http://0.0.0.0:8000/getNext30Days/"
+    this.url = "http://backend:8000/getNext30Days/"
     return this.httpClient.post(this.url, param);
   }
   getSimilarCharts(param:any){
-    this.url = "http://0.0.0.0:8000/show_similar/"
+    this.url = "http://backend:8000/show_similar/"
     return this.httpClient.post(this.url, param);
   }
 }
