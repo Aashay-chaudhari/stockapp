@@ -6,9 +6,13 @@ services:
       - "8000:8000"
     environment:
       - DEBUG=1  # For development only
+    networks:
+      - my-network
 
   frontend:
     build: ./stockapp_frontend
     ports:
       - "80:80"
+    networks:
+      - my-network
 
