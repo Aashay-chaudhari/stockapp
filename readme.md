@@ -43,5 +43,5 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo apt install git
 
 2) Pull the github code to EC2 instance (As the repo is public, no git authentication needed for pull)
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/Aashay-chaudhari/stockapp.git
 
