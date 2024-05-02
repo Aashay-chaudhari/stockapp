@@ -1,0 +1,32 @@
+<div>
+    <app-header></app-header>
+</div>
+<div class="dashboard-watchlist-container">
+    <div class="info-container" [ngStyle]="{ 'display': show_info ? 'block' : 'none'}">
+        <div class="info" style="line-height: 1.5;font-size: 18px;">
+
+            TradeSense is a platform designed for day traders seeking precise stock price predictions. 
+            It offers a watchlist of stocks and historical data, helping users make informed trading decisions. 
+            Beyond predictions, TradeSense provides comprehensive price movement charts. <br><br>
+            
+            TradeSense aims to enhance trading experiences with the power of machine learning.
+              <br><br>
+
+        </div>
+    </div>
+    <div class="appCharts" [ngStyle]="{ 'display': show_chart ? 'block' : 'none'}">
+        <app-charts></app-charts>
+    </div>
+    <!-- <div class="prediction" *ngIf="show_predict">
+        <app-prediction></app-prediction>
+    </div> -->
+    <div class="prediction30" *ngIf="show_predict30">
+        <app-predict30></app-predict30>
+    </div>
+    <div class="showSignals" *ngIf="show_signals">
+        <app-signals></app-signals>
+    </div>
+    <div class="app-watchlist">
+        <app-watchlist></app-watchlist>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+.app-watchlist{
+    flex:15vw;
+}
+.chart-container{
+    flex:85vw;
+}
+.appCharts{
+    flex:85vw;
+}
+.page-container{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: -1px 0px 2px 0px rgba(0, 0, 0, 0.24);
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.buttons-container > button {
+    height: 35px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.buttons-container > button:hover{
+    background-color: rgb(238, 235, 235);
+
+}

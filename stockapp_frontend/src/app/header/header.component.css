@@ -1,0 +1,49 @@
+.header-container{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    height: 7.5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+    justify-content: start;
+}
+#header-img{
+    cursor: pointer;
+}
+.app-title{
+    margin-left:1.5vw;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.header-buttons-container{
+    padding-left: 45%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.header-buttons-container > button {
+    height: 35px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.buttons-container > button:hover{
+    background-color: rgb(238, 235, 235);
+
+}
+.logout-button{
+    height: 35px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}

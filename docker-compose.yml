@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  backend:
+    build: ./stockapp_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1  # For development only
+
+  frontend:
+    build: ./stockapp_frontend
+    ports:
+      - "80:80"
+

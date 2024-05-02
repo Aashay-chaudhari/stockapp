@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="logo">
+    </div>
+    <div class="create-user-box">
+        <img src="assets/logo1.png" style="height: 100px; width: 100px;border-radius: 50px;">
+        <input style="margin-top:20%;" [formControl]="name" placeholder="Enter New Username"><br>
+        <input style="margin-top:15%;" [formControl]="pass" type="password" placeholder="Enter New Password"><br>
+        <button style="margin-top: 20%; margin-bottom: 5%;" (click)="createUser()">Sign Up</button><br>
+        <span style="font-size: 18px;color: black;">Already a user? <a href="">Sign in.</a></span>
+        <div class="error-msg" *ngIf="errmsg!=''">{{ errmsg }}</div>
+    </div>
+</div>
+     
